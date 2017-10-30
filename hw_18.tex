@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb}
+
+\title{MATH 330 -- HW \#18}
+\author{Cristobal Forno}
+\date{10/29/2017}
+
+\begin{document}
+
+\maketitle
+
+\noindent
+\textbf{Proposition 9.11}: If a function is bijective then its inverse is unique.
+
+\noindent
+\textbf{Proof}:\\
+Let $f$: be a bijective function from  $A \to B$.
+Suppose $g_1$ and $g_2$ are both inverses to $f$. Then,
+\begin{center}
+$ g_1 = g_1 \circ i_B = g_2 \circ (f \circ g_2) = (g_1 \circ f) \circ
+g_2 = i_A \circ g_2 = g_2 $,
+\end{center}
+\noindent
+proving that there is only one unique inverse for a function. $\Box$ \\
+
+\noindent
+\textbf{Proposition 9.12}: Let $A$ and $B$ be sets. There exists an injection
+from $A \to B$ if and only if there exists a surjection from $B \to A$.
+
+\noindent
+\textbf{Proof}:\\
+We want to prove if there exists an injection from $A \to B$, then there exits a
+surjection from $B \to A$ and if there exits a surjection from $B \to A$,
+then there exits an injection from $A \to B$. Suppose $f:A \to B$ is an
+injection. Then by Proposition 9.10 (i), $f$ has a left inverse $g: B \to A$. So,
+\begin{center}
+$g \circ f = id_A$
+\end{center}
+This implies that $g$ has a right inverse, and thus $g$ is surjective by
+Proposition 9.10 (ii). Similary, if $g: B \to A$ is surjective, then $g$ has a
+right inverse $f: A \to B$. Thus, $f$ has a left inverse, $f$ is injective. $\Box$
+
+\end{document}
+
