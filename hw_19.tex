@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb}
+
+\title{MATH 330 -- HW \#19}
+\author{Cristobal Forno}
+\date{11/05/2017}
+
+\begin{document}
+
+\maketitle
+
+\noindent
+\textbf{Proposition 9.15}: If $k \in \mathbb{N}$, then $e(k) \in
+\mathbb{R}_{>0}$.\\
+
+\noindent
+\textbf{Proof}:\\
+Assume $k \in \mathbb{N}$. By Axiom 2.1, $k \in \mathbb(Z_{>0})$ as well. Axiom
+9.2(i) implies that $e(k) \in \mathbb{R}_{>0}$. Thus, proving our statement if $k \in \mathbb{N}$, then $e(k) \in
+\mathbb{R}_{>0}$. $\Box$\\
+
+\noindent
+\textbf{Proposition 9.18}: The function $e$ preserves multiplication: for all
+$m, k \in \mathbb{Z}$,
+\begin{center}
+  $e(m \cdot k) = e(m) \cdot e(k)$, 
+\end{center}
+where $\cdot$ on the left-hand side refers to multiplication in $\mathbb{Z}$,
+whereas $\cdot$ on the right-hand side refers to multiplication in $\mathbb{R}$.\\
+\noindent
+\textbf{Proof}:\\
+Let $m \in \mathbb{Z}$. We first show that for all $n \in \mathbb(Z_{>0})$ that
+$e(m \cdot n) = e(m) \cdot e(n)$ by induction on $n$. First, when $n=0$,
+\begin{center}
+  $e(m \cdot n) = e(m \cdot 0) = e(0) = 0 = e(m) \cdot 0 = e(m) \cdot e(0) =
+  e(m) \cdot e(n)$.
+\end{center}
+Now suppose for some $n \geq 0$ that $e(m \cdot n) = e(m) \cdot e(n)$. By induction hypothesis,
+\begin{center}
+  $e(m \cdot (n+1)) = e(m \cdot n + m)$ \\ $= e(m \cdot n) + e(m)$ \\ $= e(m)
+  \cdot (e(n) + 1)$ \\ $= e(m) \cdot e(n + 1)$.
+\end{center}
+\noindent
+This completes our proof by induction.\\
+It remains to show that for all $n < 0$, $e(m \cdot n) = e(m) \cdot e(m)$.
+Suppose $n < 0$. Then $-n > 0$. So,
+\begin{center}
+  $e(m \cdot n) = e(-(m(-n))) = -e(m(-n)) = -e(m) \cdot e(-n) = e(m) \cdot e(n)$.
+\end{center}
+$\Box$
+\end{document}
+
