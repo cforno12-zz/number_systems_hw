@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage{amssymb}
 
-\title{MATH 330 -- HW \#19}
+\title{MATH 330 -- HW \#19 Revision}
 \author{Cristobal Forno}
 \date{11/05/2017}
 
@@ -11,13 +11,20 @@
 
 \noindent
 \textbf{Proposition 9.15}: If $k \in \mathbb{N}$, then $e(k) \in
-\mathbb{R}_{>0}$.\\
+\mathbb{R}_{\geq0}$.\\
 
 \noindent
 \textbf{Proof}:\\
-Assume $k \in \mathbb{N}$. By Axiom 2.1, $k \in \mathbb(Z_{>0})$ as well. Axiom
-9.2(i) implies that $e(k) \in \mathbb{R}_{>0}$. Thus, proving our statement if $k \in \mathbb{N}$, then $e(k) \in
-\mathbb{R}_{>0}$. $\Box$\\
+Let the statement $P(k)$ be the statement ``If $k \in \mathbb{N}$, then  $e(k) \in
+\mathbb{R}_{\geq0}$''.\\
+\underline{Base Case:} Let $k=1_{\mathbb{N}}$. By Axiom 2.1, $1_{\mathbb{Z}}$ as
+well. By Proposition 9.14, $e(1_{\mathbb{Z}})$ = $1_{\mathbb{R}}$.\\
+\underline{Inductive Case:} Assume $P(k)$ holds. We want to prove $P(n+1)$,
+where ``If $n+1 \in \mathbb{N}$, then $e(n+1) \in \mathbb{R}$''. By
+Axiom 2.1, $n+1_{\mathbb{Z}}$ as well. So, we have $e(n+1_{\mathbb{Z}}) = e(n) +
+1_{\mathbb{Z}}$ by the relationship between $\mathbb{Z}$ and $\mathbb{R}$.
+$e(n)$ holds by induction hypothesis. This completes our proof by induction. 
+$\Box$\\
 
 \noindent
 \textbf{Proposition 9.18}: The function $e$ preserves multiplication: for all
@@ -29,7 +36,7 @@ where $\cdot$ on the left-hand side refers to multiplication in $\mathbb{Z}$,
 whereas $\cdot$ on the right-hand side refers to multiplication in $\mathbb{R}$.\\
 \noindent
 \textbf{Proof}:\\
-Let $m \in \mathbb{Z}$. We first show that for all $n \in \mathbb(Z_{>0})$ that
+Let $m \in \mathbb{Z}$. We first show that for all $n \in \mathbb(Z_{\geq0})$ that
 $e(m \cdot n) = e(m) \cdot e(n)$ by induction on $n$. First, when $n=0$,
 \begin{center}
   $e(m \cdot n) = e(m \cdot 0) = e(0) = 0 = e(m) \cdot 0 = e(m) \cdot e(0) =
