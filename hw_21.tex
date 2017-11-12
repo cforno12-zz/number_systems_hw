@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage{amssymb}
 
-\title{MATH 330 -- HW \#20}
+\title{MATH 330 -- HW \#21}
 \author{Cristobal Forno}
 \date{\today}
 
@@ -9,8 +9,42 @@
 
 \maketitle
 
-\textbf{Propostion 10.7}: Let $x, y \in \mathbb{Z}$. Then 
+\noindent
+Let $A$ be a subset of $\mathbb{R}$. We define $-A = \{-a : a \in A\}$.\\
+\noindent
+\textbf{Question} Let $A$ be bounded subset of $\mathbb{R}$. Prove that \\
+\textbf{(1)} inf($-A$) = $-$sup($A$)\\
+\indent
+\textbf{Proof}: We want to prove inf($-A$) $\leq$ $-$sup($A$) \textbf{(a)} and inf($-A$)
+$\geq$ $-$sup($A$) \textbf{(b)} then it implies that inf($-A$) $=$ $-$sup($A$). \\
+\indent \indent
+\textbf{(a)}We know the inf($-A$) $\leq$ for all $-a \in -A$. Therefore,
+$-$inf($-A$) $\geq$ $a$. In other words, $-$inf($-A$) is an upper bound for $A$.
+Hence, sup($A$) $\leq$ $-$inf($-A$), which is equivalent to, inf($-A$) $\leq$
+$-$sup($A$).\\
+\indent \indent
+\textbf{(b)} Since $A$ is bounded above, then $a \leq$ sup($A$). We can compute
+that, $-a \geq -$sup($A$). Therefore, $-$sup($A$) is a lower bound for $-A$ which implies that
+inf($-A$) $\geq$ $-$sup($A$).\\
+\indent
+Finally, since inf($-A$) $\leq$ $-$sup($A$)  and inf($-A$)
+$\geq$ $-$sup($A$) implies that inf($-A$) $=$ $-$sup($A$). $\Box$\\
 
+\textbf{(2)} sup($-A$) = $-$inf($A$) \\
+\indent
+\textbf{Proof}: We want to prove sup($-A$) $\leq$ $-$inf($A$) \textbf{(a)} and sup($-A$)
+$\geq$ $-$inf($A$) \textbf{(b)} then it implies that inf($-A$) $=$ $-$sup($A$). \\
+\indent \indent
+\textbf{(a)} We know the sup($-A$) $\geq$ for all $-a \in -A$. Therefore,
+$-$sup($-A$) $\leq$ $a$. In other words, $-$sup($-A$) is a lower bound for $A$.
+Hence, $-$sup($-A$) $\leq$ inf($A$), which is equivalent to, sup($-A$) $\leq$
+$-$inf($A$).\\
+\indent \indent
+\textbf{(b)} Since $A$ is bounded below, then inf($A$) $\leq$ for all $a \in A$.
+We can compute that, $-$inf($A$) $\geq$ $-a$. Therefore, $-$inf($A$) is an
+upperbound for $-A$ which implies that sup($-A$) $\geq$ $-$inf($A$).\\
+\indent
+Finally, since \textbf{(a)} and \textbf{(b)} hold, then both statements imply that sup($-A$) = $-$inf($A$). $\Box$
 
 \end{document}
 
