@@ -1,0 +1,24 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb}
+
+\title{MATH 330 -- HW \#21}
+\author{Cristobal Forno}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\textbf{Proposition 10.21}: Let $L = \lim_{k\to\infty} x_k.$\\
+$(i)$ If $(x_k)_{k=1}^\infty$ is increasing, then $x_k \leq L$ for all $k \in \mathbb{N}$.\\
+\noindent
+\textbf{Proof}:\\
+\indent
+Assume $(x_n)_{k=1}^\infty$ is increasing and $\lim_{k\to\infty} x_k = L$. We
+will prove by contradction. Assume there exists $m \in \mathbb{N}$ such that $x_m
+> L$. Let $\varepsilon = x_m - L$. Then for any $M \in \mathbb{N}$, let k =
+$\max\{M, m\}$. So, in particular, $k \leq M$. Since the sequence is increasing,
+we have $x_k \leq x_n > L$. But then $|x_k - L| = x_k - L \geq x_n - L =
+\varepsilon$. Thus, the sequence $(x_k)_{k=1}^\infty$ does not converge to L,
+which is a contradction.
+\end{document}
