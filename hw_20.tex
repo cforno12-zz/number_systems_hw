@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage{amssymb}
 
-\title{MATH 330 -- HW \#20}
+\title{MATH 330 -- HW \#20 Revision}
 \author{Cristobal Forno}
 \date{\today}
 
@@ -18,12 +18,13 @@ only if $x^2 < y^2$.\\
 Let $x, y \in \mathbb{Z}$. We want to prove if $|x| < |y|$, then $x^2 < y^2$ (1)
 and if $x^2 < y^2$, then $|x| < |y|$ (2).\\
 \indent
-(1) Assume $|x| < |y|$. Then $|y| - |x| \in \mathbb{R_{\geq0}}$. Now, $|y|^2 -
-|x|^2$. Proposition 10.6 implies, $|y|^2 - |x|^2 = y^2 - x^2$. Equivalently,
-$x^2 < y^2$. This proves our statement, if $|x| < |y|$, then $x^2 < y^2$.
+(1) Assume $|x| < |y|$. Then $|y| - |x| \in \mathbb{R_{> 0}}$.  $(|y| - |x|)^2 =
+|y|^2 - 2|x||y| - 
+|x|^2$. This can also be set as an inequality, $|x|^2 < 2|x||y| < |y|^2$. For
+our purposes, we will only focus on $|x|^2 < |y|^2$. Proposition 10.6 implies, $|x|^2 < |y|^2 = x^2 < y^2$. This proves our statement, if $|x| < |y|$, then $x^2 < y^2$.
 
 \indent
-(2) Assume $x^2 < y^2$. Then, $y^2 - x^2 \in \mathbb{R_{\geq0}}$. Equivalently,
+(2) Assume $x^2 < y^2$. Then, $y^2 - x^2 \in \mathbb{R_{> 0}}$. Equivalently,
 $(y-x) \cdot (y+x)$. We have $x < y$ and $x < -y$. These two inequalities can
 only hold if $|x| < |y|$, by the definition of absolute value. $\Box$ \\
 
@@ -44,7 +45,9 @@ x \leq 1$, we have $x^n \cdot x < x^n \cdot 1 = x^n$. So,
 \begin{center}
   $x^{k+1} = x^k \cdot x \leq x^n \cdot x \leq x^n$,
 \end{center}
-where the first inequality follows from the induction hypothesis, completing our
+where the first inequality follows from the induction hypothesis and the second
+inequality also holds since $0 \leq
+x \leq 1$ and it will make $x^n$ less than or equal to itself. Thus, completing our
 proof by induction. $\Box$
 
 \end{document}
