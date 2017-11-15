@@ -10,27 +10,30 @@
 \maketitle
 
 \textbf{Proposition 10.21}: Let $L = \lim_{k\to\infty} x_k.$\\
-$(i)$ If $(x_k)_{k=1}^\infty$ is increasing, then $x_k \leq L$ for all $k \in \mathbb{N}$.\\
+$(i)$ If $(x_k)_{k=1}^\infty$ is increasing, then $x_k \leq L$ for all $k \geq 0$.\\
 \noindent
 \textbf{Proof}:\\
 \indent
-Assume $(x_n)_{k=1}^\infty$ is increasing and $\lim_{k\to\infty} x_k = L$. We
-will prove by contradction. Assume there exists $m \in \mathbb{N}$ such that $x_m
+Assume $(x_k)_{k=1}^\infty$ is increasing and $L = \lim_{k\to\infty} x_k$. We
+will prove by contradiction. Assume there exists $m \in \mathbb{N}$ such that $x_m
 > L$. Let $\varepsilon = x_m - L$. Then for any $M \in \mathbb{N}$, let k =
-$\max\{M, m\}$. So, in particular, $k \leq M$. Since the sequence is increasing,
-we have $x_k \leq x_n > L$. But then $|x_k - L| = x_k - L \geq x_n - L =
-\varepsilon$. Thus, the sequence $(x_k)_{k=1}^\infty$ does not converge to L,
-which is a contradction.\\
+$\max\{M, m\}$. So, in particular, $k \geq M$. Since the sequence is increasing,
+we have $x_k \leq x_m > L$. But then $|x_k - L| = x_k - L \geq x_m - L =
+\varepsilon$. Thus, the sequence $(x_k)_{k=1}^\infty$ does not converge to $L$,
+then $L \neq \lim_{k\to\infty} x_k$ (implied by Proposition 10.16), 
+which is a contradiction. $\Box$ \\
 
 \noindent
-$(i)$ If $(x_n)_{k=1}^\infty$ is decreasing, then $x_k \geq L$ for all $k \in
-\mathbb{N}$.\\
+$(ii)$ If $(x_k)_{k=1}^\infty$ is decreasing, then $x_k \geq L$ for all $k \geq 0$.\\
 \noindent
 \textbf{Proof}:\\
 \indent
-Assume $(x_n)_{k=1}^\infty$ is decreasing and $\lim_{k\to\infty}x_k = L$. We
+Assume $(x_k)_{k=1}^\infty$ is decreasing and $L = \lim_{k\to\infty}x_k$. We
 will prove by contradiction. Assume there exists $m \in \mathbb{N}$ such that
-$x_m < L$. Let $\varepsilon = L - x_m$. Then for any $M \in \mathbb{N}$, let k =
-$\max\{M, m\}$
+$x_m < L$. Let $\varepsilon = L + x_m$. Then for any $M \in \mathbb{N}$, let k =
+$\max\{M, m\}$. So, in particular, $k \leq M$. Since the sequence is decreasing,
+we have $x_k \geq x_m < L$. But then $|L+x_k| =  L+x_k \leq L+x_m=\varepsilon$.
+Thus, the sequence $(x_k)_{k=1}^\infty$ does not converge to $L$, then $L \neq
+\lim_{k\to\infty} x_k$ (implied by Proposition 10.16), which is a contradiction. $\Box$
 
 \end{document}
