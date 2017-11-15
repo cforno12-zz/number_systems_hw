@@ -1,0 +1,29 @@
+\documentclass[12]{article}
+\usepackage{amssymb}
+
+\title{Math 330 -- HW \#23}
+\author{Cristobal Forno}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\textbf{Project 10.20}: Prove the analogous statement for decreasing bounded
+sequences. In summary, we then know that every monotonic bounded sequence
+converges. \\
+\indent
+\textbf{Proof}: We will prove that every decreasing bounded sequence converges.
+Suppose $(x_k)_{k=1}^\infty$ is a sequence that is decreasing and bounded and
+let A be a set. Then the set $A =
+\{x_k:k \in \mathbb{N}\} \subseteq \mathbb{R}$ is bounded. Thus, by Proposition
+8.50, it has a greatest lower bound $s$. We will show that $\lim_{k\to\infty}x_k
+= s$.\\
+\indent
+Let $\varepsilon > 0$. Then $s+\varepsilon > s$, and so $s+\varepsilon$ is not a
+lower bound for A. Thus, there exists some $M \in \mathbb{N}$ such that $x_M < s
++ \varepsilon$. Since the sequence is decreasing, we have $x_m \leq x_M$ for all
+$m \geq M$. Therefore, for $m \geq M$, we have $s - \varepsilon < s \leq x_m
+\leq x_M < s + \varepsilon$, and so $|x_m-s|<\varepsilon$ by Proposition 10.8 (v).$\Box$
+
+\end{document}
