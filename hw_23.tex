@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb}
+
+\title{MATH 330 -- HW \#23}
+\author{Cristobal Forno}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\noindent
+\textbf{Proposition 10.23}:\\
+\noindent
+$(iii) \lim_{k\to\infty} (a_k + b_k) = A + B$.\\
+\indent
+\textbf{Proof}: Let $\varepsilon > 0$ then there exists $M_1 \in \mathbb{N}$
+such that
+\begin{center}
+  $m \geq M_1 \Longrightarrow |a_m - A| < \frac{\varepsilon}{2}$,
+\end{center}
+and there exists $M_2 \in \mathbb{N}$ such that
+\begin{center}
+  $m \geq M_2 \Longrightarrow |b_m - B| < \frac{\varepsilon}{2}$.
+\end{center}
+We define $M = \max{M_1, M_2}$. Then, for all $n \leq M$, we have
+\begin{center}
+  $|(a_m+b_m)-(A+B)|=|(a_m-A)+(b_m-B)|$\\
+  $\leq |a_m-A|+|b_m-B|$ (by the triangle inequality)\\
+  $< \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon$.
+\end{center}
+$\Box$
+
+\noindent
+$(v)$ If $A \neq 0$, then $\lim_{k\to\infty} \frac{1}{a_k} = \frac{1}{A}$.\\
+\indent
+\textbf{Proof}:
+Suppose $A \neq 0$ and $M_1 \in \mathbb{N}$ such that, for $m \geq M_1$, we have
+\begin{center}
+  $|a_m-A| \leq \frac{|A|}{2} \Longrightarrow |A| - |a_m| \leq ||A| - |a_m||
+  \leq |A-a_m| < \frac{|A|}{2} \Longrightarrow \frac{|A|}{2} < |a_m|$,
+\end{center}
+where, in the second inequality after the first implication, we used Proposition
+10.10 (v). Thus for all $m \geq M_1$, we have
+\begin{center}
+  $0 < \frac{|A|}{2} < |a_m| \Longrightarrow 0 < \frac{1}{|a_m|}<
+  \frac{2}{|A|}$.
+\end{center}
+Thus, for $m \geq M_1$,
+\begin{center}
+  $|\frac{1}{a_m} - \frac{1}{A}| = |\frac{A-a_m}{A \cdot a_m }|=
+  \frac{|A-a_m|}{|A||a_m} \leq \frac{2}{|A|^2}\cdot |A-a_m|$.
+\end{center}
+Now let $\varepsilon > 0$. Since $\lim_{k\to\infty}a_k=A$, we can choose $M_2
+\in \mathbb{N}$ such that
+\begin{center}
+  $m \leq M_2 \Longrightarrow |A-a_m| < \frac{|A|^2}{2}\cdot\varepsilon$.
+\end{center}
+We now define $N = \max{M_1, M_2}$. Then, for $m \geq M$, we have
+\begin{center}
+  $|\frac{1}{a_m}-\frac{1}{A}| \leq \frac{2}{|A|^2}\cdot|A-a_m|<
+  \frac{2}{|A|^2}\cdot\frac{|A|^2}{2}\cdot\varepsilon=\varepsilon$.
+\end{center}
+$\Box$
+
+\end{document}
