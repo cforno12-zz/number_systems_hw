@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage{amssymb}
 
-\title{MATH 330 -- HW \#22}
+\title{MATH 330 -- HW \#22 Revision}
 \author{Cristobal Forno}
 \date{\today}
 
@@ -16,12 +16,12 @@ $(i)$ If $(x_k)_{k=1}^\infty$ is increasing, then $x_k \leq L$ for all $k \geq 0
 \indent
 Assume $(x_k)_{k=1}^\infty$ is increasing and $L = \lim_{k\to\infty} x_k$. We
 will prove by contradiction. Assume there exists $m \in \mathbb{N}$ such that $x_m
-> L$. Let $\varepsilon = x_m - L$. Then for any $M \in \mathbb{N}$, let k =
-$\max\{M, m\}$. So, in particular, $k \geq M$. Since the sequence is increasing,
-we have $x_k \leq x_m > L$. But then $|x_k - L| = x_k - L \geq x_m - L =
-\varepsilon$. Thus, the sequence $(x_k)_{k=1}^\infty$ does not converge to $L$,
-then $L \neq \lim_{k\to\infty} x_k$ (implied by Proposition 10.16), 
-which is a contradiction. $\Box$ \\
+> L$. Let $\varepsilon = x_m - L$. Then for any $M \in \mathbb{N}$ such that $m
+\geq M$, let k = $\max\{M, m\}$. So, in particular, $k \geq M$. Since the
+sequence is increasing, we have $x_k \leq x_m > L$. But then $|x_k - L| = x_k -
+L \geq x_m - L = \varepsilon$. Thus, the sequence $(x_k)_{k=1}^\infty$ does not
+converge to $L$, then $L \neq \lim_{k\to\infty} x_k$ (implied by Proposition
+10.16),  which is a contradiction. $\Box$ \\
 
 \noindent
 $(ii)$ If $(x_k)_{k=1}^\infty$ is decreasing, then $x_k \geq L$ for all $k \geq 0$.\\
@@ -30,10 +30,12 @@ $(ii)$ If $(x_k)_{k=1}^\infty$ is decreasing, then $x_k \geq L$ for all $k \geq 
 \indent
 Assume $(x_k)_{k=1}^\infty$ is decreasing and $L = \lim_{k\to\infty}x_k$. We
 will prove by contradiction. Assume there exists $m \in \mathbb{N}$ such that
-$x_m < L$. Let $\varepsilon = L + x_m$. Then for any $M \in \mathbb{N}$, let k =
+$x_m < L$. Let $\varepsilon = L + x_m$. Then for any $M \in \mathbb{N}$ such
+that  $m \geq M$, let k =
 $\max\{M, m\}$. So, in particular, $k \leq M$. Since the sequence is decreasing,
 we have $x_k \geq x_m < L$. But then $|L+x_k| =  L+x_k \leq L+x_m=\varepsilon$.
 Thus, the sequence $(x_k)_{k=1}^\infty$ does not converge to $L$, then $L \neq
-\lim_{k\to\infty} x_k$ (implied by Proposition 10.16), which is a contradiction. $\Box$
+\lim_{k\to\infty} x_k$ (implied by Proposition 10.16), which is a contradiction.
+$\Box$
 
 \end{document}
