@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\title{MATH 330 -- HW \#30}
+\author{Cristobal Forno}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\textbf{Question:} Let $A = \mathbb{R} \diagdown \{-1\}$, that is, $A$ is the set of all
+integers excluding $-1$. We define a binary operation $\circ$ on $A$ as follows:
+\begin{center}
+  $a \circ b = ab +a +b$, for all $a,b \in A$
+\end{center}
+Verify the following:
+\newline
+(1) $a \circ b \in \mathbb{A}$ for all $a,b \in \mathbb{A}$.
+
+\noindent
+\textbf{Proof:}
+$A$ is closed if $a, b \in A$ implies: $a \circ b \in A$. Suppse $a \circ b = ab +
+a + b = -1$. This means $ab + a + b +1 = (a+1) (b+1) = 0$. So, either $a = -1$ or
+$b = -1$. $\Box$
+
+\noindent
+(2) for $a, b, c \in A, (a \circ b) \circ c = a \circ (b \circ c)$
+
+\noindent
+\textbf{Proof:}
+The operation $\circ$ is associative if and only if:
+\begin{center}
+  $(a \circ b) \circ c = a \circ (b \circ c)$ for all $a, b, c \in A$
+\end{center}
+Let's computer both sides of this equation:
+\begin{center}
+  $(a \circ b) \circ c = (ab + a + b) \circ c = (ab+a+b)c + (ab+a+b) + c =
+  abc+ac+bc+ab+a+b+c$\\
+  $a \circ (b \circ c) = a \circ (bc + b +c) = a(bc+b+c)+a+(bc+b+c) =
+  abc+ac+bc+ab+a+b+c$
+\end{center}
+Since both equations are the same, the operation $\circ$ is associative.$\Box$
+  
+\noindent
+(3) $a \circ 0 = a = 0 \circ a$ for all $a \in A$
+
+\noindent
+\textbf{Proof:}
+We want to the operation $\circ$ has an identity element $0$. We must show that $a \circ 0 = a = 0 \circ a$.\\
+The left side of the equation $a \circ 0 = a(0)+a +0 = a$.\\
+The right right of the equation $0 \circ a = (0)a + 0 + a = a$.\\
+Since both equations are the same, $a \circ 0 = a = 0 \circ a$. $\Box$ \\
+
+\noindent
+(4) for each $a \in A$, there exits $b \in A$ such that $a \circ b = 0 = b \circ
+a$
+
+\noindent
+\textbf{Proof:}
+We must show $a \circ b = 0 = b \circ a$.\\
+\begin{center}
+  $a \circ b = ab+a+b = 0 = ba+b+a = a \circ b$
+\end{center}
+  Thus, $a \circ b = 0 = b \circ a$. $\Box$ \\
+\noindent
+(5) $a \circ b = b \circ a$ for all $a, b \in A$.
+
+\noindent
+\textbf{Proof:}
+It is implied by (4) that $a \circ b = b \circ a$. $\Box$
+
+\noindent
+We conclude that $(A, \circ)$ is an abelian group with $0$ as an identity element.
+\end{document}
