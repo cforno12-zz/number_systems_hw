@@ -11,7 +11,39 @@
 \maketitle
 
 \textbf{Questions:} Let $G$ be a group and let $a \in G$. Prove that\\
-(1) $C_{G}(a) = \{g \in G : ga = ag\}$ is a subgroup of $G$.\\
-(2) Define Z$(G) = \{x \in G:xg = gx $ for all $g \in G\}$. Show that Z($G$)$=
-\cup_{a \in G}$C$_{G}(a)$.
+\textbf{(a)} C$_{G}(a) = \{g \in G : ga = ag\}$ is a subgroup of $G$.\\
+\textbf{Proof:} To show the set C$_G(a)$ is a group, it needs to be non-empty and
+satisfy if $g,h \in $C$_G(a)$ then $gh^{-1} \in $C$_G(a)$.\\
+
+Let $g,h \in $C$_G(a)$. Then
+\begin{align}
+  ahg^{-1} &= hg^{-1}g(h^{-1}ah)g^{-1} \\
+           &= hg^{-1}g(h^{-1}ha)g^{-1} \\
+           &= hg^{-1}(gag^{-1}) \\
+           &= hg^{-1}a
+\end{align}
+(1) can be done because $hg^{-1} = (gh^{-1})^{-1}$. (3) is done since $ah=ha$
+and $hh^{-1}=1$. (4) is done since $ag=ga$ and $gg^{-1} = 1$. Since, $hg^{-1}a =
+ahg^{-1}$ and we have shown if $g,h \in$C$_G(a)$, then $hg^{-1} \in $C$_G(a)$ and we
+have a subgroup. So C$_G(a)$ is a subgroup of $G$. $\Box$
+
+\textbf{(b)} Define Z$(G) = \{a \in G:ag = ga $ for all $g \in G\}$. Show that Z($G$)$=
+\cap_{a \in G}$C$_{G}(a)$. \\
+
+\textbf{Proof:} We want to show that $Z(G) \subseteq \cap_{a \in G}$C$_{G}(a)$
+(1) and $\cap_{a \in G}$C$_{G}(a) \subseteq Z(G)$ (2), to prove that  Z($G$)$=
+\cap_{a \in G}$C$_{G}(a)$.\\
+
+(1) Suppose that $a \in Z(G)$. From the definition of center, for all $g \in G :
+ga = ag$. By the definition of centralizer, this corresponds to for all $g \in G
+: a \in $C$_{G}(a)$. Therefore, we have, by set intersection, $a
+\in \cap_{a \in G}$C$_{G}(a)$. Thus, $Z(G) \subseteq \cap_{a \in
+  G}$C$_{G}(a)$.\\
+
+(2)Suppose now that $a \in \cap_{a \in G}$C$_G(a)$. Then by definition of
+intersection, for all $g \in G : a \in $C$_G(g)$. That is, for all $g \in G :
+ag=ga$, by the definition of centralizer. By the definition of the center, this
+means $a \in Z(G)$. Thus, $\cap_{a \in G}$C$_{G}(a) \subseteq Z(G)$.\\
+
+From (1) and (2), we can say that Z($G$)$= \cap_{a \in G}$C$_{G}(a)$. $\Box$
 \end{document}
